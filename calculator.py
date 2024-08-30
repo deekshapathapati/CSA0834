@@ -1,14 +1,18 @@
-A=int(input("Enter any values"))
-B=int(input("Enter any values"))
-add=A+B
-sub=A-B
-multiply=A*B
-divide=A/B
-float_division=A//B
-remainder=A%B
-print("The sum of two numbers is:,",add)
-print("The subraction of two numbers is:,",sub)
-print("The multiplication of two numbers is:,",multiply)
-print("The division of two numbers is:,",divide)
-print("The float division of two numbers is:,",float_division)
-print("The remainder of two numbers is:,",remainder)
+x = int(input("Enter x: "))
+n = int(input("Enter n: "))
+choice = input("Choose operation (pow/add/sub/mul/div): ")
+
+if choice == "pow":
+    result = 1
+    for _ in range(n):
+        result *= x
+elif choice == "add":
+    result = x + n
+elif choice == "sub":
+    result = x - n
+elif choice == "mul":
+    result = x * n
+elif choice == "div":
+    result = x / n
+
+print("Result:", result)
